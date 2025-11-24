@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Відгуки — Меблевий Дім</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="header-block">
+    <img src="dim.png" alt="Логотип магазину" width="100">
+    <div class="header-text">
+    <h1 class="title">Меблевий Дім</h1>
+    <p><em>Якість. Комфорт. Стиль.</em></p>
+  </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Головна</a></li>
+      <li><a href="catalog.html">Каталог</a></li>
+      <li><a href="reviews.html">Відгуки</a></li>
+      <li><a href="contact.html">Зворотній зв’язок</a></li>
+    </ul>
+  </nav>
+
+  <h2>Відгуки наших клієнтів</h2>
+
+  <section>
+    <article>
+      <h3>Олена, Київ</h3>
+      <p><b>Товар:</b> Ліжко «White Dream»</p>
+      <p>Дуже зручне ліжко! Якість дерева висока, фарба рівна, без запаху. Доставили вчасно, дякую!</p>
+      <p>⭐️⭐️⭐️⭐️⭐️</p>
+    </article>
+
+    <hr>
+
+    <article>
+      <h3>Ігор, Львів</h3>
+      <p><b>Товар:</b> Диван «Soft Line»</p>
+      <p>Комфортний диван, легко розкладається. Матеріал приємний на дотик, гарно виглядає в інтер’єрі.</p>
+      <p>⭐️⭐️⭐️⭐️</p>
+    </article>
+
+    <hr>
+
+    <article>
+      <h3>Наталія, Одеса</h3>
+      <p><b>Товар:</b> Стіл «Office Light»</p>
+      <p>Дуже зручно працювати за цим столом. Виглядає стильно, займає мало місця. Рекомендую!</p>
+      <p>⭐️⭐️⭐️⭐️⭐️</p>
+    </article>
+  </section>
+
+  <h2>Залиште свій відгук</h2>
+
+  <form action="#" method="post">
+    <label for="fullname">Прізвище та ім’я:</label><br>
+    <input type="text" id="fullname" name="fullname" required><br><br>
+
+    <label for="product">Назва товару:</label><br>
+    <input type="text" id="product" name="product" required><br><br>
+
+    <label for="rating">Оцінка (1–5):</label><br>
+    <select id="rating" name="rating" required>
+      <option value="">Оберіть оцінку</option>
+      <option value="1">⭐️</option>
+      <option value="2">⭐️⭐️</option>
+      <option value="3">⭐️⭐️⭐️</option>
+      <option value="4">⭐️⭐️⭐️⭐️</option>
+      <option value="5">⭐️⭐️⭐️⭐️⭐️</option>
+    </select><br><br>
+
+    <label for="comment">Ваш відгук:</label><br>
+    <textarea id="comment" name="comment" rows="5" cols="50" maxlength="400" placeholder="Напишіть свій відгук..."></textarea><br><br>
+
+    <input type="submit" value="Надіслати відгук">
+    <input type="reset" value="Очистити форму">
+  </form>
+
+  <footer>
+    <p>&copy; 2025 Меблевий Дім. Усі права захищено.</p>
+  </footer>
+
+</body>
+</html>

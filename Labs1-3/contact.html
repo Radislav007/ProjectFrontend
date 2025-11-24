@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Зворотній зв’язок — Меблевий Дім</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+  <header>
+    <img src="dim.png" alt="Логотип Меблевий Дім" width="80">
+    <h1>Інтернет-магазин «Меблевий Дім»</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Головна</a></li>
+      <li><a href="catalog.html">Каталог</a></li>
+      <li><a href="reviews.html">Відгуки</a></li>
+      <li><a href="contact.html">Зворотній зв’язок</a></li>
+    </ul>
+  </nav>
+
+  <h2>Форма зворотнього зв’язку</h2>
+
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Персональна інформація</legend>
+
+      <label for="name">Прізвище та ім’я:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">E-mail:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="age">Вік:</label><br>
+      <input type="number" id="age" name="age" min="10" max="120" required><br><br>
+
+      <label for="education">Освіта:</label><br>
+      <select id="education" name="education" required>
+        <option value="">Оберіть освіту</option>
+        <option value="повна">Повна</option>
+        <option value="неповна">Неповна</option>
+        <option value="вища">Вища</option>
+        <option value="професійна">Професійна</option>
+      </select><br><br>
+    </fieldset>
+    <br>
+
+    <label for="purpose">Мета зворотнього зв’язку:</label><br>
+    <select id="purpose" name="purpose" required>
+      <option value="">Оберіть мету</option>
+      <option value="співпраця">Співпраця</option>
+      <option value="скарга">Скарга на порушення права власності</option>
+      <option value="пропозиція">Пропозиція</option>
+      <option value="помилка">Наявність помилки</option>
+    </select><br><br>
+
+    <label for="details">Детально:</label><br>
+    <textarea id="details" name="details" rows="5" cols="50" maxlength="500" placeholder="Опишіть деталі..."></textarea><br><br>
+
+    <input type="checkbox" id="consent" name="consent" required>
+    <label for="consent">Я погоджуюсь на обробку персональних даних</label><br><br>
+
+    <input type="submit" value="Надіслати">
+    <input type="reset" value="Очистити">
+  </form>
+
+  <footer>
+    <p>&copy; 2025 Меблевий Дім. Усі права захищено.</p>
+  </footer>
+
+</body>
+</html>
+

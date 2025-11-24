@@ -1,0 +1,235 @@
+/*
+body {
+  font-family: "Segoe UI", "Georgia", serif;
+  background-color: #3b2411; 
+  color: #f5e9d6;
+  margin: 0;
+  line-height: 1.6;
+}
+
+
+#header-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: hsl(30, 40%, 30%);
+  color: #fff;
+  z-index: 10;
+
+  display: flex;                  
+  align-items: center;            
+  justify-content: left;        
+  gap: 20px;                     
+  padding: 20px 30px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+img[src*="dim"] {
+  border: 2px solid #f5e9d6;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+h1.title {
+  text-shadow: 0 0 10px rgba(255,255,255,0.25);
+  font-variant: small-caps;
+  margin: 20px 0 5px 0;
+}
+
+
+nav > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #2a180b;
+  padding: 12px 0;
+  margin-top: 175px; 
+  gap: 60px;
+  border-top: 1px solid #5e3e20;
+  border-bottom: 1px solid #5e3e20;
+}
+
+nav a {
+  color: #f5e9d6;  
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav a:hover {
+  color: #ffe5b4;
+  text-shadow: 0 0 8px rgba(255, 229, 180, 0.5);
+}
+
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+article {
+  position: relative; 
+  width: 65%;
+  margin: 80px 40px;
+  border: 2px solid #c8a97c;
+  padding: 25px;
+  background-color: #5a3c22;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+article h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #ffe8c2;
+}
+
+article p,
+article ol {
+  font-size: 16px;
+}
+
+
+aside {
+  position: relative; 
+  float: right;
+  width: 25%;
+  background-color: #4b2e17; 
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #c8a97c;
+  margin-top: 120px;
+  margin-left: 30px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+  z-index: 2;
+}
+
+aside h3 {
+  text-align: center;
+  color: #ffe8c2;
+  border-bottom: 1px solid #c8a97c;
+  padding-bottom: 10px;
+}
+
+aside a[target="_blank"] { 
+  color: #ffe5b4;
+  text-decoration: none;
+}
+
+aside a[target="_blank"]:hover {
+  text-decoration: underline;
+}
+
+
+.furniture-table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #4b2e17;
+  border: 2px solid #c8a97c;
+  margin-top: 60px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  position: relative;
+}
+
+.furniture-table:hover {
+  transform: translateY(-15px); 
+  box-shadow: 0 12px 20px rgba(0,0,0,0.5);
+}
+
+
+
+#contact {
+  margin-top: 80px;
+  background-color: #4b2e17;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #c8a97c;
+}
+
+.contact-text {
+  max-height: 120px;
+  overflow-y: scroll;
+  background-color: #3e2614;
+  padding: 10px;
+  border: 1px solid #c8a97c;
+  border-radius: 5px;
+}
+
+
+address {
+  display: block;
+  margin-top: 15px;
+  font-style: normal;
+  color: #f5e9d6;
+  transition: all 2s ease; 
+}
+
+address:hover,
+address:focus-within {
+  background-color: #f0d9b5;
+  color: #2a180b;
+  font-weight: bold;
+  filter: brightness(1.1); 
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+
+button {
+  background-color: #6e4b2a;
+  color: #fff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+
+button:hover {
+  background-color: #d8b47a;
+  color: #3b2411;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.08);
+}
+
+
+main > article,
+main > aside,
+main > section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#catalog {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 2px solid #c8a97c;
+}
+
+
+footer {
+  text-align: center;
+  background-color: #2a180b;
+  color: beige;
+  padding: 20px 0;
+  margin-top: 60px;
+  font-size: 14px;
+  border-top: 1px solid #c8a97c;
+}
+
+
+h2 + p {
+  font-style: italic;
+  color: rgb(240, 210, 180);
+  margin-top: 5px;
+ } 
+
+ */

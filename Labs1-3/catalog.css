@@ -1,0 +1,176 @@
+/* body { 
+  font-family: "Segoe UI", serif;
+  margin: 0;
+  background-color: #2f241a;
+  color: #f8f4ec;
+}
+
+
+header {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #3a2e20;
+  color: #f9eccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px 0;
+  z-index: 10;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.5);
+}
+
+header img {
+  width: 80px;
+  height: auto;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 26px;
+  font-variant: small-caps;
+}
+
+
+nav > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  background-color: #1e1a14;
+  margin: 110px 0 0; 
+  padding: 12px 0;
+}
+
+nav a {
+  color: #f8f4ec;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #d4b67f;
+}
+
+nav a:visited {
+  color: #8a653b;
+}
+
+.catalog-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 40px;
+  margin-top: 20px;
+}
+
+.product {
+  background-color: #3c2f22;
+  border: 2px solid #654929; 
+  border-top: 2px dotted #c2914d; 
+  box-shadow: inset 0 0 10px rgba(228, 201, 82, 0.6);
+  padding: 15px;
+  border-radius: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+  transform: scale(1.02);
+  box-shadow: inset 0 0 15px rgba(201, 196, 104, 0.178);
+}
+
+
+.product img {
+  display: block;
+  margin: 0 auto;
+  width: 220px;      
+  height: 220px;     
+  object-fit: cover; 
+  border-radius: 6px;
+  filter: brightness(100%);
+  transition: filter 1s ease, transform 1s ease;
+}
+.catalog-list {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-items: center;
+}
+
+.product img:hover {
+  filter: sepia(70%) contrast(120%) brightness(90%);
+  transform: scale(1.05) rotate(-1deg);
+}
+
+
+.product h3 {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.3em;
+  margin-bottom: 8px;
+  color: hsl(35, 70%, 80%); 
+}
+
+
+.product p, .product ul {
+  font-size: 0.95em;
+  color: #f0e6d6;
+  margin: 5px 0;
+  padding-left: 15px;
+}
+
+img[alt*="Крісло"] {
+  border: 2px solid rgba(228, 201, 92, 0.4);
+}
+
+
+h3 + p {
+  color: rgb(220, 200, 180); 
+  font-style: italic;
+}
+
+button {
+  display: block;
+  margin: 25px auto;
+  background-color: #cada87;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  background-color: #dfeba5;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #1e1a14;
+  color: #f8f4ec;
+  margin-top: 40px;
+}
+
+
+.product ul {
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+
+::selection {
+  background-color: #e8e79b;
+  color: #f5e9d6;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+  text-shadow: 0 0 10px rgba(235, 244, 192, 0.2);
+}  
+  */
